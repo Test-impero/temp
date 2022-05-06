@@ -884,7 +884,7 @@ along with ViewerJS.  If not, see <http://www.gnu.org/licenses/>.
                 return "application/pdf" === a;
               },
               supportsFileExtension: function (a) {
-                return "pdf" === a;
+                return "pdf" == (a+"").toLocaleLowerCase();
               },
               path: "./PDFViewerPlugin",
               getClass: function () {
